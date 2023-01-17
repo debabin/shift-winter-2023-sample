@@ -5,8 +5,6 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { RootPage } from './pages/root';
 import { ROUTES } from './utils/constants/router';
 
-import './index.css';
-
 const router = createBrowserRouter([
   {
     path: ROUTES.ROOT,
@@ -22,12 +20,8 @@ const queryClient = new QueryClient({
   }
 });
 
-function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
-  );
-}
-
-export default App;
+export const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <RouterProvider router={router} />
+  </QueryClientProvider>
+);
