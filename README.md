@@ -1,4 +1,4 @@
-# **Shift winter 2023 sample ☀️**
+# **Shift winter 2023 sample ❄️️**
 
 Данный репозиторий содержит samples для frontend'а.
 
